@@ -47,6 +47,7 @@ def getROC(pred, y_test, nome_graph):
             best_dist = new_dist
             best_threshold = [best_dist, FPR, TPR, TP, FN, FP, TN]
 
+        # adicionar coordenadas (FPR, TPR) às listas para a curva ROC
         x_roc.append( FPR )
         y_roc.append( TPR )
         
